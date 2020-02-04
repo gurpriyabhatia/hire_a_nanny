@@ -1,0 +1,7 @@
+<h1>Your Bookings!</h1>
+
+<ul>
+  <% @bookings.each do |booking| %>
+     <li> You have booked <%= booking.nanny.nanny_name %> for <%= booking.duration %> hours, on <%= booking.start_date %></li>
+  <% end %>
+</ul>
