@@ -17,7 +17,7 @@ gem 'sassc-rails'
 gem 'simple_form'
 gem 'uglifier'
 gem 'webpacker'
-
+gem 'cloudinary', '~> 1.12.0'
 gem 'validates_timeliness', '~> 5.0.0.alpha3'
 
 group :development do
