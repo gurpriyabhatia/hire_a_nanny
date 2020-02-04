@@ -1,0 +1,17 @@
+<h1> Available Nannies </h1>
+
+<div class = "row">
+  <% @nannies.each do |nanny| %>
+    <div class="col-4 mb-5">
+      <div class="card-trip">
+        <img src=<%="https://source.unsplash.com/800x600/?smiling-woman/#{rand(50)}"%>>
+        <div class="card-trip-infos">
+          <div>
+            <h2><%= link_to nanny.nanny_name, nanny_path(nanny) %></h2>
+          </div>
+        </div>
+      </div>
+    </div>
+  <% end %>
+</div>
+
