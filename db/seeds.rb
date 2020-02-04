@@ -5,3 +5,41 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+
+require 'faker'
+
+puts 'Cleaning database...'
+
+Nanny.destroy_all
+Booking.destroy_all
+User.destroy_all
+
+puts 'Creating nannies...'
+
+5.times do
+  nanny = Nanny.new(
+    nanny_name: Faker::Name.name,
+    address: Faker::Address.full_address,
+    phone_number: Faker::PhoneNumber.cell_phone,
+    price_per_hour: Faker::Number.within(range: 5..50),
+    years_of_experience: Faker::Number.within(range: 0..50),
+    email: Faker::Internet.email
+  )
+  nanny.save!
+end
+
+puts 'Creating users...'
+
+5.times do
+  user = User.new(
+    email: Faker::Internet.email,
+    user_name: Faker::Internet.username,
+    address: Faker::Address.full_address,
+    phone_number: Faker::PhoneNumber.cell_phone,
+    password: 'password'
+  )
+  user.save!
+end
+
+puts 'Finished!'
+
