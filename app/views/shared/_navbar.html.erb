@@ -3,6 +3,7 @@
     <%= image_tag "https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/logo.png" %>
     <% end %>
 
+  <h2>Hi 👋 <%= current_user.user_name %></h2>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
@@ -18,9 +19,9 @@
           <%= link_to "Messages", "#", class: "nav-link" %>
         </li>
         <li class="nav-item dropdown">
-          <%= cl_image_tag current_user.photo.key, width: 50, height: 50, crop: :thumb, radius: :max, face: :center, class: "avatar dropdown-toggle", id: "navbarDropdown", data: { toggle: "dropdown" }, 'aria-haspopup': true, 'aria-expanded': false if current_user.photo.attached? %>
+          <%= cl_image_tag current_user.photo.key, width: 45, height: 45, crop: :thumb, radius: :max, face: :center, class: "avatar dropdown-toggle", id: "navbarDropdown", data: { toggle: "dropdown" }, 'aria-haspopup': true, 'aria-expanded': false if current_user.photo.attached? %>
           <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
-            <%= link_to "Update your profile", "#", class: "dropdown-item" %>
+            <%= link_to "Update your profile", edit_user_registration_path, class: "dropdown-item" %>
             <%= link_to "Find a Nanny", "#", class: "dropdown-item" %>
             <%= link_to "My bookings", "#", class: "dropdown-item" %>
             <%= link_to "Log out", destroy_user_session_path, method: :delete, class: "dropdown-item" %>
