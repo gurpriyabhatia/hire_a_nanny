@@ -1,10 +1,11 @@
+<div class="container">
 <%= simple_form_for booking do |f| %>
   <%= f.association :nanny, label_method: :nanny_name, collection: Nanny.order(:nanny_name) %>
-  <%= f.input :start_date %>
-  <%= f.input :end_date %>
-  <%= f.input :start_time %>
+  <%= f.input :start_date, as: :string %>
+  <%= f.input :end_date, as: :string %>
   <%= f.input :duration %>
   <%= f.input :address %>
   <%= f.input :number_of_children %>
   <%= f.submit "Book now!", class: "btn btn-primary" %>
 <% end %>
+</div>

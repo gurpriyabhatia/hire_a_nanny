@@ -1,18 +1,20 @@
 <h1>Your booking with <%= @booking.nanny.nanny_name %></h1>
 
-<h3>Details</h3>
+<div class="container">
+  <h3>Details</h3>
 
-<p>Start date: <%= @booking.start_date %></p>
-<p>End date: <%= @booking.end_date %></p>
-<p>Address: <%= @booking.address %></p>
-<p>Duration: <%= @booking.duration %></p>
-<p>Number of children: <%= @booking.number_of_children %></p>
-<p>Price: <%= @booking.total_price %></p>
+  <p>Start date: <%= @booking.start_date %></p>
+  <p>End date: <%= @booking.end_date %></p>
+  <p>Address: <%= @booking.address %></p>
+  <p>Duration: <%= @booking.duration %></p>
+  <p>Number of children: <%= @booking.number_of_children %></p>
+  <p>Price: <%= @booking.total_price %></p>
 
-<p><%= link_to 'Edit this booking', edit_booking_path(@booking) %></p>
+  <p><%= link_to 'Edit this booking', edit_booking_path(@booking) %></p>
 
-<p><%= link_to 'Delete this booking', booking_path(@booking),
-          method: :delete,
-          data: {confirm: "Are you sure?"} %></p>
+  <p><%= link_to 'Delete this booking', booking_path(@booking),
+            method: :delete,
+            data: {confirm: "Are you sure?"} %></p>
 
-<p><%= link_to 'Back to your bookings', bookings_path %></p>
+  <p><%= link_to 'Back to your bookings', bookings_path %></p>
+</div>
