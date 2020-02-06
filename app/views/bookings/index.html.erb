@@ -2,6 +2,8 @@
 
 <ul>
   <% @bookings.each do |booking| %>
-     <li> You have booked <%= booking.nanny.nanny_name %> for <%= booking.duration %> hours, on <%= booking.start_date %></li>
+     <li> You have booked <%= booking.nanny.nanny_name %> for <%= booking.duration %> hours, on <%= booking.start_date %> | <%= link_to 'View booking', booking_path(booking) %></li>
   <% end %>
 </ul>
+
+<p><%= link_to 'Create a new booking', new_booking_path %> </p>
