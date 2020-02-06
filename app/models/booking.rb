@@ -4,4 +4,5 @@ class Booking < ApplicationRecord
   #validates_date :start_date, :end_date
   belongs_to :user
   belongs_to :nanny
+  has_one :review, dependent: :destroy
 end

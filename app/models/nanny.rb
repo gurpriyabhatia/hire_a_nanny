@@ -4,4 +4,5 @@ class Nanny < ApplicationRecord
   validates :years_of_experience, numericality: true || 0
   validates :email, format: { with: URI::MailTo::EMAIL_REGEXP  }
   has_many :bookings, dependent: :destroy
+  has_many :reviews, through: :bookings
 end
