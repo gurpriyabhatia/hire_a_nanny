@@ -1,10 +1,13 @@
 class NanniesController < ApplicationController
   def index
-    @nannies = Nanny.all
+    @nannies = Nanny.where.not(latitude: nil, longitude: nil)
+    @markers = @nannies.map do |nanny|
+      { lat: nanny.latitude, lng: nanny.longitude }
+    end
   end
 
   def show
-    @nannies = Nanny.find(params[:id])
+    @nanny = Nanny.find(params[:id])
   end
 
 end
