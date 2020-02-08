@@ -10,12 +10,12 @@
 </ul>
 
 <h3>Reviews</h3>
-<% if @nanny.reviews %>
+<% if @nanny.reviews.empty? %>
   <p><%= @nanny.nanny_name %> has no reviews yet</p>
 <% else %>
   <ul>
     <% @nanny.reviews.each do |review| %>
-      <li><%= review.content %> | <%= review.stars %></li>
+      <li><%= review.content %> | <%= '*' * review.stars %></li>
     <% end %>
   </ul>
 <% end %>
