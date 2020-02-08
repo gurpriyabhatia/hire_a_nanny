@@ -4,7 +4,7 @@ class NanniesController < ApplicationController
   end
 
   def show
-    @nanny = Nanny.find(params[:id])
+    @nannies = Nanny.find(params[:id])
   end
 
 end
