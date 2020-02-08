@@ -1,6 +1,6 @@
 <div class="navbar navbar-expand-sm navbar-light navbar-lewagon topnavbar-design">
   <%= link_to "#", class: "navbar-brand" do %>
-    <%= image_tag "logo.png" %>
+    <%= image_tag "logo.png", :class => "style-image-navbar" %>
     <% end %>
 
 
@@ -14,7 +14,7 @@
     <ul class="navbar-nav mr-auto navbar-design">
       <% if user_signed_in? %>
         <li class="nav-item active">
-          <%= link_to "Home", "#", class: "btn-ghost" %>
+          <%= link_to "Home", nannies_path, class: "btn-ghost" %>
       &nbsp;&nbsp;&nbsp;
         </li>
         <li class="nav-item">
