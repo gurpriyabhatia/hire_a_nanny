@@ -4,7 +4,7 @@
   <% @nannies.each do |nanny| %>
     <div class="col-4 mb-5">
       <div class="card-trip">
-        <img src=<%="https://source.unsplash.com/800x600/?smiling-woman/#{rand(50)}"%>>
+        <img src=<%="https://source.unsplash.com/800x600/?mother-baby/#{rand(50)}"%>>
         <div class="card-trip-infos">
           <div>
             <h2><%= link_to nanny.nanny_name, nanny_path(nanny) %></h2>
