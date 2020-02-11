@@ -18,3 +18,20 @@
   box-shadow: 0 1px 2px rgba(0,0,0,0.2);
   border: white 1px solid;
 }
+
+.nanny-avatar-container{
+  position: relative
+}
+
+.nanny_avatar {
+    // background-color: rgb(216, 216, 216) !important;
+    // vertical-align: middle !important;
+    // display: block !important;
+    border-radius: 50% !important;
+    margin-left: 29px;
+    margin-right: 29px;
+    // border-width: 2px !important;
+    // border-style: solid !important;
+    // border-color: rgb(255, 255, 255) !important;
+    // overflow: hidden !important;
+}

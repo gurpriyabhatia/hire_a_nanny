@@ -1,6 +1,11 @@
-body h1 {
+body h1, h2, h3 {
   line-height: 1.2em;
   color: #4b4b4b;
   font-family: CircularStd-Black,SimHei;
+}
+
+body p, ul {
+  font-family: "Raleway";
+  color: #4b4b4b;
 }
 
