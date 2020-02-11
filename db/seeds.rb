@@ -42,13 +42,103 @@ puts 'Creating nannies...'
 Nanny.create(
     nanny_name: Faker::Name.name,
     address: 'WC1A 1AP',
+    email: Faker::Internet.email,
     phone_number: Faker::PhoneNumber.cell_phone,
-    price_per_hour: Faker::Number.within(range: 5..50),
     years_of_experience: Faker::Number.within(range: 0..50),
-    email: Faker::Internet.email
-
+    price_per_hour: Faker::Number.within(range: 5..50),
+    image: 'nanny_1.png',
+    bio: Faker::Quote.most_interesting_man_in_the_world
   )
 
+Nanny.create(
+    nanny_name: Faker::Name.name,
+    address: 'WC1A 1AP',
+    email: Faker::Internet.email,
+    phone_number: Faker::PhoneNumber.cell_phone,
+    years_of_experience: Faker::Number.within(range: 0..50),
+    price_per_hour: Faker::Number.within(range: 5..50),
+    image: 'nanny_2.png',
+    bio: Faker::Quote.most_interesting_man_in_the_world
+  )
+
+
+
+Nanny.create(
+    nanny_name: Faker::Name.name,
+    address: 'WC1A 1AP',
+    email: Faker::Internet.email,
+    phone_number: Faker::PhoneNumber.cell_phone,
+    years_of_experience: Faker::Number.within(range: 0..50),
+    price_per_hour: Faker::Number.within(range: 5..50),
+    image: 'nanny_3.png',
+    bio: Faker::Quote.most_interesting_man_in_the_world
+  )
+
+Nanny.create(
+    nanny_name: Faker::Name.name,
+    address: 'WC1A 1AP',
+    email: Faker::Internet.email,
+    phone_number: Faker::PhoneNumber.cell_phone,
+    years_of_experience: Faker::Number.within(range: 0..50),
+    price_per_hour: Faker::Number.within(range: 5..50),
+    image: 'nanny_4.png',
+    bio: Faker::Quote.most_interesting_man_in_the_world
+  )
+
+Nanny.create(
+    nanny_name: Faker::Name.name,
+    address: 'WC1A 1AP',
+    email: Faker::Internet.email,
+    phone_number: Faker::PhoneNumber.cell_phone,
+    years_of_experience: Faker::Number.within(range: 0..50),
+    price_per_hour: Faker::Number.within(range: 5..50),
+    image: 'nanny_5.png',
+    bio: Faker::Quote.most_interesting_man_in_the_world
+  )
+
+Nanny.create(
+    nanny_name: Faker::Name.name,
+    address: 'WC1A 1AP',
+    email: Faker::Internet.email,
+    phone_number: Faker::PhoneNumber.cell_phone,
+    years_of_experience: Faker::Number.within(range: 0..50),
+    price_per_hour: Faker::Number.within(range: 5..50),
+    image: 'nanny_6.png',
+    bio: Faker::Quote.most_interesting_man_in_the_world
+  )
+
+Nanny.create(
+    nanny_name: Faker::Name.name,
+    address: 'WC1A 1AP',
+    email: Faker::Internet.email,
+    phone_number: Faker::PhoneNumber.cell_phone,
+    years_of_experience: Faker::Number.within(range: 0..50),
+    price_per_hour: Faker::Number.within(range: 5..50),
+    image: 'nanny_7.png',
+    bio: Faker::Quote.most_interesting_man_in_the_world
+  )
+
+Nanny.create(
+    nanny_name: Faker::Name.name,
+    address: 'WC1A 1AP',
+    email: Faker::Internet.email,
+    phone_number: Faker::PhoneNumber.cell_phone,
+    years_of_experience: Faker::Number.within(range: 0..50),
+    price_per_hour: Faker::Number.within(range: 5..50),
+    image: 'nanny_8.png',
+    bio: Faker::Quote.most_interesting_man_in_the_world
+  )
+
+Nanny.create(
+    nanny_name: Faker::Name.name,
+    address: 'WC1A 1AP',
+    email: Faker::Internet.email,
+    phone_number: Faker::PhoneNumber.cell_phone,
+    years_of_experience: Faker::Number.within(range: 0..50),
+    price_per_hour: Faker::Number.within(range: 5..50),
+    image: 'nanny_9.png',
+    bio: Faker::Quote.most_interesting_man_in_the_world
+  )
 
 
 
