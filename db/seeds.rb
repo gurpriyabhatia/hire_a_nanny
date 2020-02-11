@@ -41,7 +41,7 @@ puts 'Creating nannies...'
 
 Nanny.create(
     nanny_name: Faker::Name.name,
-    address: 'WC1A 1AP',
+    address: 'E2 8DY',
     email: Faker::Internet.email,
     phone_number: Faker::PhoneNumber.cell_phone,
     years_of_experience: Faker::Number.within(range: 0..50),
@@ -52,7 +52,7 @@ Nanny.create(
 
 Nanny.create(
     nanny_name: Faker::Name.name,
-    address: 'WC1A 1AP',
+    address: 'E2 0BU',
     email: Faker::Internet.email,
     phone_number: Faker::PhoneNumber.cell_phone,
     years_of_experience: Faker::Number.within(range: 0..50),
@@ -65,7 +65,7 @@ Nanny.create(
 
 Nanny.create(
     nanny_name: Faker::Name.name,
-    address: 'WC1A 1AP',
+    address: 'SW1A 1AA',
     email: Faker::Internet.email,
     phone_number: Faker::PhoneNumber.cell_phone,
     years_of_experience: Faker::Number.within(range: 0..50),
@@ -76,7 +76,7 @@ Nanny.create(
 
 Nanny.create(
     nanny_name: Faker::Name.name,
-    address: 'WC1A 1AP',
+    address: 'W1J 0AH',
     email: Faker::Internet.email,
     phone_number: Faker::PhoneNumber.cell_phone,
     years_of_experience: Faker::Number.within(range: 0..50),
@@ -87,7 +87,7 @@ Nanny.create(
 
 Nanny.create(
     nanny_name: Faker::Name.name,
-    address: 'WC1A 1AP',
+    address: 'NW1 0PB'  ,
     email: Faker::Internet.email,
     phone_number: Faker::PhoneNumber.cell_phone,
     years_of_experience: Faker::Number.within(range: 0..50),
@@ -98,7 +98,7 @@ Nanny.create(
 
 Nanny.create(
     nanny_name: Faker::Name.name,
-    address: 'WC1A 1AP',
+    address: 'SE11 4FE',
     email: Faker::Internet.email,
     phone_number: Faker::PhoneNumber.cell_phone,
     years_of_experience: Faker::Number.within(range: 0..50),
@@ -120,7 +120,7 @@ Nanny.create(
 
 Nanny.create(
     nanny_name: Faker::Name.name,
-    address: 'WC1A 1AP',
+    address: 'SE1 0AG',
     email: Faker::Internet.email,
     phone_number: Faker::PhoneNumber.cell_phone,
     years_of_experience: Faker::Number.within(range: 0..50),
@@ -131,7 +131,7 @@ Nanny.create(
 
 Nanny.create(
     nanny_name: Faker::Name.name,
-    address: 'WC1A 1AP',
+    address: 'W8 4AD',
     email: Faker::Internet.email,
     phone_number: Faker::PhoneNumber.cell_phone,
     years_of_experience: Faker::Number.within(range: 0..50),
