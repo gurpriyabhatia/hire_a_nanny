@@ -1,23 +1,49 @@
-<h1><%= @nanny.nanny_name %> Profile</h1>
-<!-- TODO: show picture -->
-<ul>
-  <li>Name: <%=@nanny.nanny_name%></li>
-  <li>Address: <%= @nanny.address %></li>
-  <li>Email: <%= @nanny.email %></li>
-  <li>Phone number: <%= @nanny.phone_number %></li>
-  <li>Years of experience: <%= @nanny.years_of_experience %></li>
-  <li>Price per hour: £<%= @nanny.price_per_hour %></li>
-</ul>
+<div class = "container">
+  <div class="row">
+    <div class="col-sm-4">
+      <div class="bg-white border p-3 mt-3">
+        <div class="row">
+          <img src=<%="https://source.unsplash.com/140x140/?portrait/#{rand(50)}"%>, class = "nanny_avatar">
+        </div>
+        <class class="card p-3 mt-3 mb-3">
+          <p><strong>Years of experience:</strong> <%= @nanny.years_of_experience %></p>
+          <p><strong>Price per hour: </strong>£<%= @nanny.price_per_hour %></p>
+          <div class="col text-center">
+            <p><strong><%= link_to "Book Now", new_nanny_booking_path(@nanny), :class => "btn btn-flat" %></strong></p>
+          </div>
 
-<h3>Reviews</h3>
-<% if @nanny.reviews.empty? %>
-  <p><%= @nanny.nanny_name %> has no reviews yet</p>
-<% else %>
-  <ul>
-    <% @nanny.reviews.each do |review| %>
-      <li><%= review.content %> | <%= '*' * review.stars %></li>
-    <% end %>
-  </ul>
-<% end %>
+        </class>
+      </div>
+    </div>
+    <div class="col-sm-8 mt-3">
+        <h1> Hi, I'm <%= @nanny.nanny_name %></h1>
+          <p><strong>Address:</strong><%= @nanny.address %></p>
+          <p><strong>Email:</strong><%= @nanny.email %></p>
+          <p><strong>Phone number:</strong> <%= @nanny.phone_number %></p>
 
-<h3><%= link_to "Make a booking with this nanny", new_nanny_booking_path(@nanny) %></h3>
+        <h3>Reviews</h3>
+        <% if @nanny.reviews.empty? %>
+          <p><%= @nanny.nanny_name %> has no reviews yet</p>
+        <% else %>
+          <ul>
+            <% @nanny.reviews.each do |review| %>
+            <li><%= review.content %> | <%= '*' * review.stars %></li>
+            <% end %>
+          </ul>
+        <% end %>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+  <!-- TODO: show picture, add bio -->
+
+
+
+
+
+
