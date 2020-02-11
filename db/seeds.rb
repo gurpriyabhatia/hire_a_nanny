@@ -10,23 +10,137 @@ require 'faker'
 
 puts 'Cleaning database...'
 
-Nanny.destroy_all
+
+
+puts 'destroying bookings...'
 Booking.destroy_all
+
+puts 'destroying nannies...'
+Nanny.destroy_all
+
+puts 'destroying users...'
 User.destroy_all
+
+
 
 puts 'Creating nannies...'
 
-5.times do
-  nanny = Nanny.new(
+# 5.times do
+#   nanny = Nanny.new(
+#     nanny_name: Faker::Name.name,
+#     address: Faker::Address.full_address,
+#     phone_number: Faker::PhoneNumber.cell_phone,
+#     price_per_hour: Faker::Number.within(range: 5..50),
+#     years_of_experience: Faker::Number.within(range: 0..50),
+#     email: Faker::Internet.email
+#   )
+#   nanny.save!
+# end
+
+# do 9 nannies
+
+Nanny.create(
     nanny_name: Faker::Name.name,
-    address: Faker::Address.full_address,
+    address: 'E2 8DY',
+    email: Faker::Internet.email,
     phone_number: Faker::PhoneNumber.cell_phone,
-    price_per_hour: Faker::Number.within(range: 5..50),
     years_of_experience: Faker::Number.within(range: 0..50),
-    email: Faker::Internet.email
+    price_per_hour: Faker::Number.within(range: 5..50),
+    image: 'nanny_4.png',
+    bio: Faker::Quote.most_interesting_man_in_the_world
   )
-  nanny.save!
-end
+
+Nanny.create(
+    nanny_name: Faker::Name.name,
+    address: 'E2 0BU',
+    email: Faker::Internet.email,
+    phone_number: Faker::PhoneNumber.cell_phone,
+    years_of_experience: Faker::Number.within(range: 0..50),
+    price_per_hour: Faker::Number.within(range: 5..50),
+    image: 'nanny_7.png',
+    bio: Faker::Quote.most_interesting_man_in_the_world
+  )
+
+
+
+Nanny.create(
+    nanny_name: Faker::Name.name,
+    address: 'SW1A 1AA',
+    email: Faker::Internet.email,
+    phone_number: Faker::PhoneNumber.cell_phone,
+    years_of_experience: Faker::Number.within(range: 0..50),
+    price_per_hour: Faker::Number.within(range: 5..50),
+    image: 'nanny_3.png',
+    bio: Faker::Quote.most_interesting_man_in_the_world
+  )
+
+Nanny.create(
+    nanny_name: Faker::Name.name,
+    address: 'W1J 0AH',
+    email: Faker::Internet.email,
+    phone_number: Faker::PhoneNumber.cell_phone,
+    years_of_experience: Faker::Number.within(range: 0..50),
+    price_per_hour: Faker::Number.within(range: 5..50),
+    image: 'nanny_8.png',
+    bio: Faker::Quote.most_interesting_man_in_the_world
+  )
+
+Nanny.create(
+    nanny_name: Faker::Name.name,
+    address: 'NW1 0PB'  ,
+    email: Faker::Internet.email,
+    phone_number: Faker::PhoneNumber.cell_phone,
+    years_of_experience: Faker::Number.within(range: 0..50),
+    price_per_hour: Faker::Number.within(range: 5..50),
+    image: 'nanny_5.png',
+    bio: Faker::Quote.most_interesting_man_in_the_world
+  )
+
+Nanny.create(
+    nanny_name: Faker::Name.name,
+    address: 'SE11 4FE',
+    email: Faker::Internet.email,
+    phone_number: Faker::PhoneNumber.cell_phone,
+    years_of_experience: Faker::Number.within(range: 0..50),
+    price_per_hour: Faker::Number.within(range: 5..50),
+    image: 'nanny_1.png',
+    bio: Faker::Quote.most_interesting_man_in_the_world
+  )
+
+Nanny.create(
+    nanny_name: Faker::Name.name,
+    address: 'WC1A 1AP',
+    email: Faker::Internet.email,
+    phone_number: Faker::PhoneNumber.cell_phone,
+    years_of_experience: Faker::Number.within(range: 0..50),
+    price_per_hour: Faker::Number.within(range: 5..50),
+    image: 'nanny_2.png',
+    bio: Faker::Quote.most_interesting_man_in_the_world
+  )
+
+Nanny.create(
+    nanny_name: Faker::Name.name,
+    address: 'SE1 0AG',
+    email: Faker::Internet.email,
+    phone_number: Faker::PhoneNumber.cell_phone,
+    years_of_experience: Faker::Number.within(range: 0..50),
+    price_per_hour: Faker::Number.within(range: 5..50),
+    image: 'nanny_6.png',
+    bio: Faker::Quote.most_interesting_man_in_the_world
+  )
+
+Nanny.create(
+    nanny_name: Faker::Name.name,
+    address: 'W8 4AD',
+    email: Faker::Internet.email,
+    phone_number: Faker::PhoneNumber.cell_phone,
+    years_of_experience: Faker::Number.within(range: 0..50),
+    price_per_hour: Faker::Number.within(range: 5..50),
+    image: 'nanny_9.png',
+    bio: Faker::Quote.most_interesting_man_in_the_world
+  )
+
+
 
 puts 'Creating users...'
 
