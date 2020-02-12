@@ -16,7 +16,7 @@ User.destroy_all
 
 puts 'Creating nannies...'
 
-20.times do
+21.times do
   nanny = Nanny.new(
     nanny_name: Faker::Name.name,
     address: "#{Faker::Address.street_address} United Kingdom",
@@ -40,5 +40,14 @@ puts 'Creating users...'
   )
   user.save!
 end
+
+user = User.new(
+    email: "alexia@test.com",
+    user_name: Faker::Internet.username,
+    address: Faker::Address.full_address,
+    phone_number: Faker::PhoneNumber.cell_phone,
+    password: 'hellohello'
+  )
+  user.save!
 
 puts 'Finished!'
