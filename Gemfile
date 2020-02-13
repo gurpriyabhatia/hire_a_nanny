@@ -22,6 +22,7 @@ gem 'webpacker'
 gem 'cloudinary', '~> 1.12.0'
 gem 'validates_timeliness', '~> 5.0.0.alpha3'
 gem 'geocoder'
+gem 'algoliasearch-rails'
 
 group :development do
   gem 'web-console', '>= 3.3.0'
