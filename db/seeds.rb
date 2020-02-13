@@ -173,7 +173,7 @@ Nanny.create(
 
 Nanny.create(
     nanny_name: Faker::Name.name,
-    address: 'W1G0EF',
+    address: 'W1G 0EF',
     email: Faker::Internet.email,
     phone_number: Faker::PhoneNumber.cell_phone,
     years_of_experience: Faker::Number.within(range: 0..50),
@@ -217,7 +217,7 @@ Nanny.create(
 
 Nanny.create(
     nanny_name: Faker::Name.name,
-    address: 'EC2A3ET',
+    address: 'EC2A 3ET',
     email: Faker::Internet.email,
     phone_number: Faker::PhoneNumber.cell_phone,
     years_of_experience: Faker::Number.within(range: 0..50),
@@ -239,7 +239,7 @@ Nanny.create(
 
 Nanny.create(
     nanny_name: Faker::Name.name,
-    address: 'SW5 0EU',
+    address: 'SE1 7PB',
     email: Faker::Internet.email,
     phone_number: Faker::PhoneNumber.cell_phone,
     years_of_experience: Faker::Number.within(range: 0..50),
@@ -307,6 +307,33 @@ end
 
 user = User.new(
     email: "alexia@test.com",
+    user_name: Faker::Internet.username,
+    address: Faker::Address.full_address,
+    phone_number: Faker::PhoneNumber.cell_phone,
+    password: 'hellohello'
+  )
+  user.save!
+
+  user = User.new(
+    email: "gurpriya@test.com",
+    user_name: Faker::Internet.username,
+    address: Faker::Address.full_address,
+    phone_number: Faker::PhoneNumber.cell_phone,
+    password: 'hellohello'
+  )
+  user.save!
+
+  user = User.new(
+    email: "rachel@test.com",
+    user_name: Faker::Internet.username,
+    address: Faker::Address.full_address,
+    phone_number: Faker::PhoneNumber.cell_phone,
+    password: 'hellohello'
+  )
+  user.save!
+
+  user = User.new(
+    email: "fix@test.com",
     user_name: Faker::Internet.username,
     address: Faker::Address.full_address,
     phone_number: Faker::PhoneNumber.cell_phone,
