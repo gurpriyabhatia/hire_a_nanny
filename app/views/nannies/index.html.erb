@@ -6,9 +6,13 @@
 <br>
 <br>
 
-
+<div class= "row" >
 <!-- Search form -->
 <input class="form-control" type="text" placeholder="Search" aria-label="Search" id="search">
+</div>
+<br>
+<br>
+<br>
 
 <div class="content">
   <div class="cards">
@@ -19,7 +23,8 @@
             <img src=<%="https://source.unsplash.com/800x600/?mother-baby/#{rand(50)}"%>>
             <div class="card-trip-infos">
               <div>
-                <h2><%= link_to nanny.nanny_name, nanny_path(nanny) %> (£ <%= nanny.price_per_hour%> per hour)</h2>
+                <h2><%= link_to nanny.nanny_name, nanny_path(nanny) %> </h2>
+                 <h2> (£ <%= nanny.price_per_hour%> per hour)</h2>
               </div>
             </div>
           </div>

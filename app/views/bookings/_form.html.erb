@@ -1,11 +1,35 @@
-<div class="container">
-<%= simple_form_for booking do |f| %>
-  <%= f.association :nanny, label_method: :nanny_name, collection: Nanny.order(:nanny_name) %>
-  <%= f.input :start_date, as: :string %>
-  <%= f.input :end_date, as: :string %>
-  <%= f.input :duration %>
-  <%= f.input :address %>
-  <%= f.input :number_of_children %>
-  <%= f.submit "Book now!", class: "btn-flat" %>
-<% end %>
-</div>
+
+
+
+  <div class= "row align-items-center justify-content-center">
+
+    <div class= "col-sm">
+      <img src="https://source.unsplash.com/400x400/?mother/#{rand(50)}", margin="35"; padding="50">
+    </div>
+
+    <div class= "col-sm">
+      <%= simple_form_for booking do |f| %>
+      <%= f.association :nanny, label_method: :nanny_name, collection: Nanny.order(:nanny_name) %>
+      <%= f.input :start_date, as: :string %>
+      <%= f.input :end_date, as: :string %>
+      <%= f.input :duration %>
+      <%= f.input :address %>
+      <%= f.input :number_of_children %>
+      <%= f.submit "Book now!", class: "btn-flat" %>
+      <% end %>
+    </div>
+
+    <div class= "col-sm">
+      <div
+        id="map"
+        style="
+        width: 33vw;
+        height: 66vh;
+  position: sticky;
+  top: 0;"
+        data-markers="<%= @markers.to_json %>"
+        data-mapbox-api-key="<%= ENV['MAPBOX_API_KEY'] %>"
+      ></div>
+    </div>
+  </div>
+
