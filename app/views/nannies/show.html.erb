@@ -3,7 +3,7 @@
     <div class="col-sm-4">
       <div class="bg-white border p-3 mt-3">
         <div class="row">
-          <img src=<%="https://source.unsplash.com/140x140/?portrait/#{rand(50)}"%>, class = "nanny_avatar">
+          <%= image_tag @nanny.image, alt: "alttext", class: "nanny_avatar" %>
         </div>
         <class class="card p-3 mt-3 mb-3">
           <p><strong>Years of experience:</strong> <%= @nanny.years_of_experience %></p>
@@ -17,10 +17,16 @@
     </div>
     <div class="col-sm-8 mt-3">
         <h1> Hi, I'm <%= @nanny.nanny_name %></h1>
-          <p><strong>Address:</strong><%= @nanny.address %></p>
-          <p><strong>Email:</strong><%= @nanny.email %></p>
-          <p><strong>Phone number:</strong> <%= @nanny.phone_number %></p>
-
+        <br>
+        <i class="fas fa-quote-left" style="color:#EBEBEB"></i>
+        <p class = "font-italic" ><%= @nanny.bio %>.</p>
+        <i class="fas fa-highlighter" style="color:#EBEBEB"></i>
+        <br>
+        <br>
+        <p><i class="fas fa-home" style="color:#484848">&nbsp;</i><%= @nanny.address %></p>
+        <p><i class="fas fa-envelope-open-text" style="color:#484848">&nbsp;</i><%= @nanny.email %></p>
+        <p><i class="fas fa-mobile-alt"style="color:#484848">&nbsp;&nbsp;</i><%= @nanny.phone_number %></p>
+        <br>
         <h3>Reviews</h3>
         <% if @nanny.reviews.empty? %>
           <p><%= @nanny.nanny_name %> has no reviews yet</p>
