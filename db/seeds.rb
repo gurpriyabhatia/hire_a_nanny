@@ -283,7 +283,7 @@ Nanny.create(
 
 Nanny.create(
     nanny_name: Faker::Name.name,
-    address: SE11 4FE',
+    address: 'SE11 4FE',
     email: Faker::Internet.email,
     phone_number: Faker::PhoneNumber.cell_phone,
     years_of_experience: Faker::Number.within(range: 0..50),
