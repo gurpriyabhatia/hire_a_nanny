@@ -19,5 +19,6 @@ class Nanny < ApplicationRecord
   def load_algolia
     index = Algolia::Index.new('Hire-a-nanny')
     index.add_object(self)
+    puts "Reindex done"
   end
 end
