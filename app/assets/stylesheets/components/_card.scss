@@ -39,6 +39,7 @@
 
 }
 
+
 .card {
   background-size: cover;
   background-position: center;
@@ -53,5 +54,11 @@
   color: white;
   font-weight: bolder;
   text-shadow: 0 0 10px rgba(0,0,0,0.7);
+}
+
+.profile-card {
+    border: 1px solid #e4e4e4 !important;
+    border-radius: 1px !important;
+    padding: 24px !important;
 }
 
