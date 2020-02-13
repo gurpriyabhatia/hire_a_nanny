@@ -25,19 +25,6 @@ User.destroy_all
 
 puts 'Creating nannies...'
 
-# 5.times do
-#   nanny = Nanny.new(
-#     nanny_name: Faker::Name.name,
-#     address: Faker::Address.full_address,
-#     phone_number: Faker::PhoneNumber.cell_phone,
-#     price_per_hour: Faker::Number.within(range: 5..50),
-#     years_of_experience: Faker::Number.within(range: 0..50),
-#     email: Faker::Internet.email
-#   )
-#   nanny.save!
-# end
-
-# do 9 nannies
 
 Nanny.create(
     nanny_name: Faker::Name.name,
@@ -140,7 +127,170 @@ Nanny.create(
     bio: Faker::Quote.most_interesting_man_in_the_world
   )
 
+Nanny.create(
+    nanny_name: Faker::Name.name,
+    address: 'SW6 4JA',
+    email: Faker::Internet.email,
+    phone_number: Faker::PhoneNumber.cell_phone,
+    years_of_experience: Faker::Number.within(range: 0..50),
+    price_per_hour: Faker::Number.within(range: 5..50),
+    image: 'https://source.unsplash.com/800x600/?mother-baby/#{rand(50)}',
+    bio: Faker::Quote.most_interesting_man_in_the_world
+  )
 
+Nanny.create(
+    nanny_name: Faker::Name.name,
+    address: 'W6 8AZ',
+    email: Faker::Internet.email,
+    phone_number: Faker::PhoneNumber.cell_phone,
+    years_of_experience: Faker::Number.within(range: 0..50),
+    price_per_hour: Faker::Number.within(range: 5..50),
+    image: 'https://source.unsplash.com/800x600/?mother-baby/#{rand(50)}',
+    bio: Faker::Quote.most_interesting_man_in_the_world
+  )
+
+Nanny.create(
+    nanny_name: Faker::Name.name,
+    address: 'E2 8DY',
+    email: Faker::Internet.email,
+    phone_number: Faker::PhoneNumber.cell_phone,
+    years_of_experience: Faker::Number.within(range: 0..50),
+    price_per_hour: Faker::Number.within(range: 5..50),
+    image: 'https://source.unsplash.com/800x600/?mother-baby/#{rand(50)}',
+    bio: Faker::Quote.most_interesting_man_in_the_world
+  )
+
+Nanny.create(
+    nanny_name: Faker::Name.name,
+    address: 'N1C 4QL',
+    email: Faker::Internet.email,
+    phone_number: Faker::PhoneNumber.cell_phone,
+    years_of_experience: Faker::Number.within(range: 0..50),
+    price_per_hour: Faker::Number.within(range: 5..50),
+    image: 'https://source.unsplash.com/800x600/?mother-baby/#{rand(50)}',
+    bio: Faker::Quote.most_interesting_man_in_the_world
+  )
+
+Nanny.create(
+    nanny_name: Faker::Name.name,
+    address: 'W1G0EF',
+    email: Faker::Internet.email,
+    phone_number: Faker::PhoneNumber.cell_phone,
+    years_of_experience: Faker::Number.within(range: 0..50),
+    price_per_hour: Faker::Number.within(range: 5..50),
+    image: 'https://source.unsplash.com/800x600/?mother-baby/#{rand(50)}',
+    bio: Faker::Quote.most_interesting_man_in_the_world
+  )
+
+Nanny.create(
+    nanny_name: Faker::Name.name,
+    address: 'W12 8QE',
+    email: Faker::Internet.email,
+    phone_number: Faker::PhoneNumber.cell_phone,
+    years_of_experience: Faker::Number.within(range: 0..50),
+    price_per_hour: Faker::Number.within(range: 5..50),
+    image: 'https://source.unsplash.com/800x600/?mother-baby/#{rand(50)}',
+    bio: Faker::Quote.most_interesting_man_in_the_world
+  )
+
+Nanny.create(
+    nanny_name: Faker::Name.name,
+    address: 'W12 7FR',
+    email: Faker::Internet.email,
+    phone_number: Faker::PhoneNumber.cell_phone,
+    years_of_experience: Faker::Number.within(range: 0..50),
+    price_per_hour: Faker::Number.within(range: 5..50),
+    image: 'https://source.unsplash.com/800x600/?mother-baby/#{rand(50)}',
+    bio: Faker::Quote.most_interesting_man_in_the_world
+  )
+
+Nanny.create(
+    nanny_name: Faker::Name.name,
+    address: 'SE1 8XR',
+    email: Faker::Internet.email,
+    phone_number: Faker::PhoneNumber.cell_phone,
+    years_of_experience: Faker::Number.within(range: 0..50),
+    price_per_hour: Faker::Number.within(range: 5..50),
+    image: 'https://source.unsplash.com/800x600/?mother-baby/#{rand(50)}',
+    bio: Faker::Quote.most_interesting_man_in_the_world
+  )
+
+Nanny.create(
+    nanny_name: Faker::Name.name,
+    address: 'EC2A3ET',
+    email: Faker::Internet.email,
+    phone_number: Faker::PhoneNumber.cell_phone,
+    years_of_experience: Faker::Number.within(range: 0..50),
+    price_per_hour: Faker::Number.within(range: 5..50),
+    image: 'https://source.unsplash.com/800x600/?mother-baby/#{rand(50)}',
+    bio: Faker::Quote.most_interesting_man_in_the_world
+  )
+
+Nanny.create(
+    nanny_name: Faker::Name.name,
+    address: 'W1W 8QT',
+    email: Faker::Internet.email,
+    phone_number: Faker::PhoneNumber.cell_phone,
+    years_of_experience: Faker::Number.within(range: 0..50),
+    price_per_hour: Faker::Number.within(range: 5..50),
+    image: 'https://source.unsplash.com/800x600/?mother-baby/#{rand(50)}',
+    bio: Faker::Quote.most_interesting_man_in_the_world
+  )
+
+Nanny.create(
+    nanny_name: Faker::Name.name,
+    address: 'SW5 0EU',
+    email: Faker::Internet.email,
+    phone_number: Faker::PhoneNumber.cell_phone,
+    years_of_experience: Faker::Number.within(range: 0..50),
+    price_per_hour: Faker::Number.within(range: 5..50),
+    image: 'https://source.unsplash.com/800x600/?mother-baby/#{rand(50)}',
+    bio: Faker::Quote.most_interesting_man_in_the_world
+  )
+
+Nanny.create(
+    nanny_name: Faker::Name.name,
+    address: 'EC2Y 8DS',
+    email: Faker::Internet.email,
+    phone_number: Faker::PhoneNumber.cell_phone,
+    years_of_experience: Faker::Number.within(range: 0..50),
+    price_per_hour: Faker::Number.within(range: 5..50),
+    image: 'https://source.unsplash.com/800x600/?mother-baby/#{rand(50)}',
+    bio: Faker::Quote.most_interesting_man_in_the_world
+  )
+
+Nanny.create(
+    nanny_name: Faker::Name.name,
+    address: 'W1A 1AB',
+    email: Faker::Internet.email,
+    phone_number: Faker::PhoneNumber.cell_phone,
+    years_of_experience: Faker::Number.within(range: 0..50),
+    price_per_hour: Faker::Number.within(range: 5..50),
+    image: 'https://source.unsplash.com/800x600/?mother-baby/#{rand(50)}',
+    bio: Faker::Quote.most_interesting_man_in_the_world
+  )
+
+Nanny.create(
+    nanny_name: Faker::Name.name,
+    address: 'SW10 9NH',
+    email: Faker::Internet.email,
+    phone_number: Faker::PhoneNumber.cell_phone,
+    years_of_experience: Faker::Number.within(range: 0..50),
+    price_per_hour: Faker::Number.within(range: 5..50),
+    image: 'https://source.unsplash.com/800x600/?mother-baby/#{rand(50)}',
+    bio: Faker::Quote.most_interesting_man_in_the_world
+  )
+
+Nanny.create(
+    nanny_name: Faker::Name.name,
+    address: SE11 4FE',
+    email: Faker::Internet.email,
+    phone_number: Faker::PhoneNumber.cell_phone,
+    years_of_experience: Faker::Number.within(range: 0..50),
+    price_per_hour: Faker::Number.within(range: 5..50),
+    image: 'https://source.unsplash.com/800x600/?mother-baby/#{rand(50)}',
+    bio: Faker::Quote.most_interesting_man_in_the_world
+  )
 
 puts 'Creating users...'
 
@@ -155,5 +305,13 @@ puts 'Creating users...'
   user.save!
 end
 
-puts 'Finished!'
+user = User.new(
+    email: "alexia@test.com",
+    user_name: Faker::Internet.username,
+    address: Faker::Address.full_address,
+    phone_number: Faker::PhoneNumber.cell_phone,
+    password: 'hellohello'
+  )
+  user.save!
 
+puts 'Finished!'
