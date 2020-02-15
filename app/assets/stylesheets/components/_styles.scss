@@ -12,5 +12,7 @@ body p, ul {
 .background-booking {
   background-color: #f1f3f4;
   background-size: cover;
-  height: calc(100vh - 66px);
+  // height: calc(100vh - 66px);
+  width: 100vw;
+  height: 100vh;
 }
