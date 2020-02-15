@@ -3,7 +3,9 @@
     <div class="col-sm-4">
       <div class="bg-white border p-3 mt-3">
         <div class="row">
-          <%= image_tag @nanny.image, alt: "alttext", class: "nanny_avatar" %>
+          <div class="nanny-avatar-container">
+            <%= image_tag @nanny.image, alt: "alttext", class: "nanny_avatar" %>
+          </div>
         </div>
         <class class="card p-3 mt-3 mb-3">
           <p><strong>Years of experience:</strong> <%= @nanny.years_of_experience %></p>
