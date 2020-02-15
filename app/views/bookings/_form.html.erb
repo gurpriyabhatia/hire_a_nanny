@@ -18,6 +18,21 @@
     </div>
 
     <div class= "col-sm">
-      <%= image_tag @nanny.image, :class => "nanny-booking-avatar" %>
+      <div class="shadow-sm p-3 mb-5 mt-5 bg-white nanny-profile-card">
+        <div class="row">
+          <div class="nanny-avatar-container">
+            <%= image_tag @nanny.image, alt: "alttext", class: "nanny_avatar" %>
+          </div>
+        </div>
+        <class class="card p-3 mt-3 mb-3 border border-white">
+          <p class="text-center"><strong>Years of experience:</strong> <%= @nanny.years_of_experience %></p>
+          <p class="text-center"><strong>Price per hour: </strong>£<%= @nanny.price_per_hour %></p>
+          <div class="col text-center">
+            <p><strong><%= link_to "Book Now", new_nanny_booking_path(@nanny), :class => "btn btn-flat" %></strong></p>
+          </div>
+
+        </class>
+      </div>
+
     </div>
   </div>
