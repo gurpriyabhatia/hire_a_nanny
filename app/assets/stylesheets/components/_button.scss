@@ -7,24 +7,40 @@
   border-radius: 10px;
   background: #678a74;
   transition: background 0.3s ease;
-  justify-content: space-between
+  justify-content: space-between;
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
 }
 
 .btn-flat:hover {
   background: #678a74;
   color: white;
-}
-
-.btn-ghost {
-  color: #4A4A4A;
-  border: 1px solid #4A4A4A;
-  padding: 3px 10px;
-  border-radius: 50px;
-  font-weight: bold;
-  opacity: 0.6;
   transition: opacity 0.3s ease;
 }
 
+// .btn-ghost {
+//   color: #4A4A4A;
+//   border: 1px solid #4A4A4A;
+//   padding: 3px 10px;
+//   border-radius: 50px;
+//   font-weight: bold;
+//   opacity: 0.6;
+//   transition: opacity 0.3s ease;
+// }
+
+.btn-ghost {
+  color: #678a74;
+  border: 1px solid #678a74;
+  padding: 3px 10px;
+  border-radius: 50px;
+  font-weight: normal;
+  opacity: 0.6;
+  text-decoration: none
+}
+.btn-medium:hover {
+  opacity: 1;
+  text-decoration: none;
+  color: #999999;
+}
 
 
 
