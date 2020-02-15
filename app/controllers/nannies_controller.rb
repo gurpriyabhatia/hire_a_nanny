@@ -8,6 +8,7 @@ class NanniesController < ApplicationController
         infoWindow: render_to_string(partial: "info_window",
         locals: { nanny: nanny }) }
     end
+    @imgs = @nannies.map { |nanny| [nanny.id, nanny.image] }
   end
 
   def show

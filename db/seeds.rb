@@ -134,7 +134,7 @@ Nanny.create(
     phone_number: Faker::PhoneNumber.cell_phone,
     years_of_experience: Faker::Number.within(range: 0..50),
     price_per_hour: Faker::Number.within(range: 5..50),
-    image: 'https://source.unsplash.com/800x600/?mother-baby/#{rand(50)}',
+    image: 'nanny_4.png',
     bio: Faker::Quote.most_interesting_man_in_the_world
   )
 
@@ -145,7 +145,7 @@ Nanny.create(
     phone_number: Faker::PhoneNumber.cell_phone,
     years_of_experience: Faker::Number.within(range: 0..50),
     price_per_hour: Faker::Number.within(range: 5..50),
-    image: 'https://source.unsplash.com/800x600/?mother-baby/#{rand(50)}',
+    image: 'nanny_4.png',
     bio: Faker::Quote.most_interesting_man_in_the_world
   )
 
@@ -156,7 +156,7 @@ Nanny.create(
     phone_number: Faker::PhoneNumber.cell_phone,
     years_of_experience: Faker::Number.within(range: 0..50),
     price_per_hour: Faker::Number.within(range: 5..50),
-    image: 'https://source.unsplash.com/800x600/?mother-baby/#{rand(50)}',
+    image: 'nanny_4.png',
     bio: Faker::Quote.most_interesting_man_in_the_world
   )
 
@@ -167,7 +167,7 @@ Nanny.create(
     phone_number: Faker::PhoneNumber.cell_phone,
     years_of_experience: Faker::Number.within(range: 0..50),
     price_per_hour: Faker::Number.within(range: 5..50),
-    image: 'https://source.unsplash.com/800x600/?mother-baby/#{rand(50)}',
+    image: 'nanny_4.png',
     bio: Faker::Quote.most_interesting_man_in_the_world
   )
 
@@ -178,7 +178,7 @@ Nanny.create(
     phone_number: Faker::PhoneNumber.cell_phone,
     years_of_experience: Faker::Number.within(range: 0..50),
     price_per_hour: Faker::Number.within(range: 5..50),
-    image: 'https://source.unsplash.com/800x600/?mother-baby/#{rand(50)}',
+    image: 'nanny_4.png',
     bio: Faker::Quote.most_interesting_man_in_the_world
   )
 
@@ -189,7 +189,7 @@ Nanny.create(
     phone_number: Faker::PhoneNumber.cell_phone,
     years_of_experience: Faker::Number.within(range: 0..50),
     price_per_hour: Faker::Number.within(range: 5..50),
-    image: 'https://source.unsplash.com/800x600/?mother-baby/#{rand(50)}',
+    image: 'nanny_4.png',
     bio: Faker::Quote.most_interesting_man_in_the_world
   )
 
@@ -200,7 +200,7 @@ Nanny.create(
     phone_number: Faker::PhoneNumber.cell_phone,
     years_of_experience: Faker::Number.within(range: 0..50),
     price_per_hour: Faker::Number.within(range: 5..50),
-    image: 'https://source.unsplash.com/800x600/?mother-baby/#{rand(50)}',
+    image: 'nanny_4.png',
     bio: Faker::Quote.most_interesting_man_in_the_world
   )
 
@@ -211,7 +211,7 @@ Nanny.create(
     phone_number: Faker::PhoneNumber.cell_phone,
     years_of_experience: Faker::Number.within(range: 0..50),
     price_per_hour: Faker::Number.within(range: 5..50),
-    image: 'https://source.unsplash.com/800x600/?mother-baby/#{rand(50)}',
+    image: 'nanny_4.png',
     bio: Faker::Quote.most_interesting_man_in_the_world
   )
 
@@ -222,7 +222,7 @@ Nanny.create(
     phone_number: Faker::PhoneNumber.cell_phone,
     years_of_experience: Faker::Number.within(range: 0..50),
     price_per_hour: Faker::Number.within(range: 5..50),
-    image: 'https://source.unsplash.com/800x600/?mother-baby/#{rand(50)}',
+    image: 'nanny_4.png',
     bio: Faker::Quote.most_interesting_man_in_the_world
   )
 
@@ -233,7 +233,7 @@ Nanny.create(
     phone_number: Faker::PhoneNumber.cell_phone,
     years_of_experience: Faker::Number.within(range: 0..50),
     price_per_hour: Faker::Number.within(range: 5..50),
-    image: 'https://source.unsplash.com/800x600/?mother-baby/#{rand(50)}',
+    image: 'nanny_4.png',
     bio: Faker::Quote.most_interesting_man_in_the_world
   )
 
@@ -244,7 +244,7 @@ Nanny.create(
     phone_number: Faker::PhoneNumber.cell_phone,
     years_of_experience: Faker::Number.within(range: 0..50),
     price_per_hour: Faker::Number.within(range: 5..50),
-    image: 'https://source.unsplash.com/800x600/?mother-baby/#{rand(50)}',
+    image: 'nanny_4.png',
     bio: Faker::Quote.most_interesting_man_in_the_world
   )
 
@@ -255,7 +255,7 @@ Nanny.create(
     phone_number: Faker::PhoneNumber.cell_phone,
     years_of_experience: Faker::Number.within(range: 0..50),
     price_per_hour: Faker::Number.within(range: 5..50),
-    image: 'https://source.unsplash.com/800x600/?mother-baby/#{rand(50)}',
+    image: 'nanny_4.png',
     bio: Faker::Quote.most_interesting_man_in_the_world
   )
 
@@ -266,7 +266,7 @@ Nanny.create(
     phone_number: Faker::PhoneNumber.cell_phone,
     years_of_experience: Faker::Number.within(range: 0..50),
     price_per_hour: Faker::Number.within(range: 5..50),
-    image: 'https://source.unsplash.com/800x600/?mother-baby/#{rand(50)}',
+    image: 'nanny_4.png',
     bio: Faker::Quote.most_interesting_man_in_the_world
   )
 
@@ -277,7 +277,7 @@ Nanny.create(
     phone_number: Faker::PhoneNumber.cell_phone,
     years_of_experience: Faker::Number.within(range: 0..50),
     price_per_hour: Faker::Number.within(range: 5..50),
-    image: 'https://source.unsplash.com/800x600/?mother-baby/#{rand(50)}',
+    image: 'nanny_4.png',
     bio: Faker::Quote.most_interesting_man_in_the_world
   )
 
@@ -288,7 +288,7 @@ Nanny.create(
     phone_number: Faker::PhoneNumber.cell_phone,
     years_of_experience: Faker::Number.within(range: 0..50),
     price_per_hour: Faker::Number.within(range: 5..50),
-    image: 'https://source.unsplash.com/800x600/?mother-baby/#{rand(50)}',
+    image: 'nanny_4.png',
     bio: Faker::Quote.most_interesting_man_in_the_world
   )
 
