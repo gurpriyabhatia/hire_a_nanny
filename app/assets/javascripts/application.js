@@ -13,16 +13,30 @@ const searchAlgolia = () => {
         console.log(content.hits)
         const row = document.querySelector(".cards");
         row.innerHTML = "";
+        const imgs = JSON.parse(document.querySelector(".cards").dataset.imgs);
         content.hits.forEach((hit) => {
-          const card = `<div class="card-trip">
-        <img src="https://source.unsplash.com/800x600/?mother-baby/${hit.nanny_name}">
-        <div class="card-trip-infos">
-          <div>
-            <h2><a href="/nannies/${hit.id}">${hit.nanny_name}</a></h2>
-          </div>
-        </div>
-      </div>`
-      row.insertAdjacentHTML("beforeend", card);
+          let image = ""
+          imgs.forEach((img) => {
+            if (hit.id === img[0]) {
+              image = img[1];
+            }
+          })
+          if (image) {
+            const card = `
+              <div>
+                <div class="card-trip">
+                <img src="/assets/${image}">
+                  <div class="card-trip-infos">
+                    <div>
+                      <h2><a href="/nannies/${hit.id}">${hit.nanny_name}</a></h2>
+                       <h2> (£ ${hit.price_per_hour} per hour)</h2>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            `
+            row.insertAdjacentHTML("beforeend", card);
+          }
         })
       })
       .catch(function searchFailure(err) {
