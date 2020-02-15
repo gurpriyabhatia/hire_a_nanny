@@ -1,6 +1,8 @@
 <div class="background-booking">
   <div class="container">
-    <h1>Edit your booking with <%= @booking.nanny.nanny_name %></h1>
+    <br>
+    <h3>Edit your booking with <strong><%= @booking.nanny.nanny_name %></strong></h3>
+    <br>
 
     <%= render 'form', booking: @booking %>
   </div>
