@@ -10,6 +10,7 @@ class BookingsController < ApplicationController
 
   def new
     @booking = Booking.new
+    @nanny = Nanny.find(params[:nanny_id])
   end
 
   def create
@@ -45,6 +46,6 @@ class BookingsController < ApplicationController
   end
 
   def booking_params
-    params.require(:booking).permit(:nanny_id, :start_date, :end_date, :start_time, :address, :duration, :number_of_children)
+    params.require(:booking).permit(:nanny_id, :start_date, :end_date, :address, :number_of_children)
   end
 end
