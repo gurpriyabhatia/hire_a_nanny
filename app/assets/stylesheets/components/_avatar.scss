@@ -20,7 +20,11 @@
 }
 
 .nanny-avatar-container{
-  position: relative
+  width: 250px;
+  height: 250px;
+  position: relative;
+  overflow: hidden;
+  margin: 0 auto;
 }
 
 .nanny_avatar {
@@ -31,6 +35,9 @@
     margin-left: 29px;
     margin-right: 29px;
     margin:0 auto;
+    width: 250px;
+    height: 100%;
+    object-fit: cover;
     // border-width: 2px !important;
     // border-style: solid !important;
     // border-color: rgb(255, 255, 255) !important;
