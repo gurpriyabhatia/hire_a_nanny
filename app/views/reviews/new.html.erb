@@ -1,7 +1,18 @@
-<h1>Create your review</h1>
-
-<%= simple_form_for [@booking, @review] do |f| %>
-<%= f.input :content %>
-<%= f.input :stars %>
-<%= f.submit %>
-<% end %>
+<div class="background-booking">
+  <div class="container">
+    <br>
+    <h3>Create your review</h3>
+    <div class= "row align-items-center justify-content-center">
+      <div class= "col-sm-4">
+        <%= image_tag "hire-a-nanny-logo.png", :class => "nanny-booking-logo" %>
+      </div>
+      <div class= "col-sm-8">
+        <%= simple_form_for [@booking, @review] do |f| %>
+        <%= f.input :content %>
+        <%= f.input :stars %>
+        <%= f.submit "Create this review", class: "btn-flat" %>
+        <% end %>
+      </div>
+    </div>
+  </div>
+</div>
